@@ -82,3 +82,8 @@ resource "aws_iam_role_policy" "xosphere_organization_inventory_realtime_updates
 }
 EOF
 }
+
+
+output "xosphere_organization_inventory_realtime_updates_submission_role_arn" {
+  value = aws_iam_role.xosphere_organization_inventory_realtime_updates_submission_role.arn
+}
